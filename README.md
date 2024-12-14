@@ -1,5 +1,5 @@
 # Bot Discord personnalisable via 2 dossier (config.json/.env) !
 
-Plus d'information plus tard
+Vous avez juste a modifié le dossier "config.json" ainsi que ".env".
 
-Discord : https://discord.gg/qTeUUaBKWe
+Discord support : https://discord.gg/qTeUUaBKWe
