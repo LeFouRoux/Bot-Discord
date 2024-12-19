@@ -1,4 +1,4 @@
-# Bot Discord personnalisable via 2 dossier (config.json/.env) !
+# Bot Discord personnalisable pour serveur Garry's Mods via 2 dossier (config.json/.env) !
 
 > Faite "npm install" avant tout.
 > Vous avez juste a modifié le dossier "config.json" ainsi que ".env".
