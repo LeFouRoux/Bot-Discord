@@ -6,7 +6,7 @@ const { EmbedBuilder } = require("discord.js");
  */
 module.exports = {
     name: "statut",
-    description: "🔗 ❱ Vous donne le statut du Azura.",
+    description: `🔗 ❱ Vous donne le statut du ${SERVEURP}.`,
     category: "GMOD",
     botPermissions: ["EmbedLinks"],
     command: {
@@ -20,12 +20,12 @@ module.exports = {
 
     async interactionRun(interaction) {
         const embed = new EmbedBuilder()
-        .setTitle("Statut de AzuraRP [DarkRP] :")
+        .setTitle(`Statut de ${SERVEURP} :`)
         .setColor(EMBED_COLORS.BOT_EMBED)
         .setThumbnail(LOGO)
         .setDescription(
-            `**Voici le statut de \`AzuraRP [DarkRP].\`**\n\n` +
-            '**Statut:** <:ChargementV2:1277251594030678159> Ouverture le XX/XX/2024 à XX heures ! <:ChargementV2:1277251594030678159> \n\n' +
+            `**Voici le statut de \`${SERVEURP}.\`**\n\n` +
+            `**Statut:** ${STATUT} \n\n` +
             `**Serveur de Support:** [Ici](${SUPPORT_SERVER}) \n` +
             `**Site:** [Ici](${SITE})`
         );

@@ -1,4 +1,4 @@
-const { EMBED_COLORS, SUPPORT_SERVER, SITE, LOGO } = require("@root/config.js");
+const { EMBED_COLORS, SUPPORT_SERVER, SITE, LOGO, SERVEURP } = require("@root/config.js");
 const { EmbedBuilder } = require("discord.js");
 
 /**
@@ -6,7 +6,7 @@ const { EmbedBuilder } = require("discord.js");
  */
 module.exports = {
     name: "hierarchie",
-    description: "🔗 ❱ Vous donne la hiérarchie de AzuraRP.",
+    description: `🔗 ❱ Vous donne la hiérarchie de ${SERVEURP}.`,
     category: "GMOD",
     botPermissions: ["EmbedLinks"],
     command: {
@@ -20,11 +20,11 @@ module.exports = {
 
     async interactionRun(interaction) {
         const embed = new EmbedBuilder()
-        .setTitle("Hiérarchie de Azura :")
+        .setTitle(`Hiérarchie de ${SERVEURP} :`)
         .setColor(EMBED_COLORS.BOT_EMBED)
         .setThumbnail(LOGO)
         .setDescription(
-            `**Voici la hiérarchie de \`Azura.\`**\n\n` +
+            `**Voici la hiérarchie de \`${SERVEURP}.\`**\n\n` +
             `**__Fondation__**\n\n` +
             '```1. Fondateur\n2. Co-Fondateur\n3. Directeur```\n' +
             `**__Haut-Gradé__**\n\n` +

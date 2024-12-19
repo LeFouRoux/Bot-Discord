@@ -1,4 +1,4 @@
-const { EMBED_COLORS, SUPPORT_SERVER, SITE, LOGO } = require("@root/config.js");
+const { EMBED_COLORS, SUPPORT_SERVER, SITE, LOGO, COLLEC } = require("@root/config.js");
 const { EmbedBuilder } = require("discord.js");
 
 
@@ -7,7 +7,7 @@ const { EmbedBuilder } = require("discord.js");
  */
 module.exports = {
     name: "workshop",
-    description: "🔗 ❱ Vous donne le workshop de Azura [DarkRP]",
+    description: `🔗 ❱ Vous donne le workshop de ${SERVEURP}`,
     category: "GMOD",
     command: {
       enabled: false,
@@ -23,10 +23,10 @@ module.exports = {
       const embed = new EmbedBuilder()
       .setColor(EMBED_COLORS.BOT_EMBED)
       .setThumbnail(LOGO)
-      .setTitle("Voici le workshop de Azura [DarkRP] :")
+      .setTitle(`Voici le workshop de ${SERVEURP} :`)
       .setDescription(
           `**Workshop :**\n` +
-          'https://steamcommunity.com/sharedfiles/filedetails/?id=3314797630 \n\n' +
+          `${COLLEC} \n\n` +
           `**Serveur de Support:** [Ici](${SUPPORT_SERVER}) \n` +
           `**Site:** [Ici](${SITE})`
       );

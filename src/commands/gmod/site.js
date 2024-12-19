@@ -20,11 +20,11 @@ module.exports = {
 
     async interactionRun(interaction) {
         const embed = new EmbedBuilder()
-        .setTitle("Site de AzuraRP :")
+        .setTitle(`Site de ${SERVEURP} :`)
         .setColor(EMBED_COLORS.BOT_EMBED)
         .setThumbnail(LOGO)
         .setDescription(
-            `**Voici le site de \`Azura.\`**\n\n` +
+            `**Voici le site de \`${SERVEURP}.\`**\n\n` +
             `**[Clique ici pour accéder au site](${SITE})**\n\n` +
             `**Serveur de Support:** [Ici](${SUPPORT_SERVER}) \n` +
             `**Site:** [Ici](${SITE})`

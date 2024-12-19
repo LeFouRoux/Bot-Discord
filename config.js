@@ -1,17 +1,25 @@
 module.exports = {
-  OWNER_IDS: ["1147184446412423189"], // Bot owner ID's
-  SUPPORT_SERVER: "LIEN_DISCORD", // Your bot support server
+  OWNER_IDS: ["1147184446412423189"], // ID du fondateur
+  SUPPORT_SERVER: "LIEN_DISCORD", // Discord Support/Communautaire
+  FDO: "LIEN DISCORD FORCE DE L'ORDRE",
+  BOUTIQUE: "Lien de la boutique",
+  TOPSERV: "LIEN TOP SERVEUR",
+  COLLEC: "LIEN DE LA COLLECTION",
+  STATUT: "Serveur en développement", // Texte pour mettre dans l'embed Statut.js
+  Regle: "LIEN REGLEMENT",
   SITE: "SITE_WEB",
   LOGO: "LIEN_LOGO",
+  SERVEURP: "NOM DU SERVEUR RP",
+  IPSERV: "IP DU SERVEUR",
   PREFIX_COMMANDS: {
-    ENABLED: true, // Enable/Disable prefix commands
-    DEFAULT_PREFIX: "!", // Default prefix for the bot
+    ENABLED: true, // Activer le préfix = true | Désactivé = false
+    DEFAULT_PREFIX: "+", // Préfix par défault
   },
   INTERACTIONS: {
-    SLASH: true, // Should the interactions be enabled
-    CONTEXT: true, // Should contexts be enabled
-    GLOBAL: true, // Should the interactions be registered globally
-    TEST_GUILD_ID: "ID_GUILD", // Guild ID where the interactions should be registered. [** Test you commands here first **]
+    SLASH: true, // Activer les commandes slash = true | Désactivé = false
+    CONTEXT: true, // Les contextes doivent-ils être activés ?
+    GLOBAL: true, // Les interactions doivent-elles être enregistrées globalement
+    TEST_GUILD_ID: "ID_GUILD", // ID de serveur où les interactions doivent être enregistrées. [** Testez d'abord vos commandes ici **]
   },
   EMBED_COLORS: {
     BOT_EMBED: "#068ADD",
@@ -38,27 +46,27 @@ module.exports = {
   },
 
   DASHBOARD: {
-    enabled: false, // enable or disable dashboard
-    baseURL: "http://localhost:8080", // base url
-    failureURL: "http://localhost:8080", // failure redirect url
-    port: "8080", // port to run the bot on
+    enabled: false, // Activer le dashboard = true | Désactivé = false
+    baseURL: "http://localhost:8080", // URL
+    failureURL: "http://localhost:8080", // FAIL URL
+    port: "8080", // Le port sur le quelle le dashboard va ce lancer
   },
 
   ECONOMY: {
     ENABLED: false,
     CURRENCY: " <:coinicon:1076212434248937514>",
-    DAILY_COINS: 100, // coins to be received by daily command
-    MIN_BEG_AMOUNT: 100, // minimum coins to be received when beg command is used
-    MAX_BEG_AMOUNT: 2500, // maximum coins to be received when beg command is used
+    DAILY_COINS: 100, // pièces journalier
+    MIN_BEG_AMOUNT: 100, // minimum de pièces à recevoir lorsque la commande beg est utilisée
+    MAX_BEG_AMOUNT: 2500, // nombre maximum de pièces à recevoir lorsque la commande beg est utilisée
   },
 
   MUSIC: {
     ENABLED: false,
-    IDLE_TIME: 60, // Time in seconds before the bot disconnects from an idle voice channel
+    IDLE_TIME: 60, // Temps en secondes avant que le bot ne se déconnecte d'un canal vocal inactif
     MAX_SEARCH_RESULTS: 5,
     DEFAULT_SOURCE: "YTM", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
-    // Add any number of lavalink nodes here
-    // Refer to https://github.com/freyacodes/Lavalink to host your own lavalink server
+    // Ajoutez n'importe quel nombre de nœuds lavalink ici
+    // Reportez-vous à https://github.com/freyacodes/Lavalink pour héberger votre propre serveur lavalink
     LAVALINK_NODES: [
       {
         host: "localhost",
@@ -105,20 +113,20 @@ module.exports = {
   },
 
   PRESENCE: {
-    ENABLED: true, // Whether or not the bot should update its status
-    STATUS: "online", // The bot's status [online, idle, dnd, invisible]
-    TYPE: "WATCHING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
-    MESSAGE: "{members} membres", // Your bot status message {members} membres. | .gg/nowex
+    ENABLED: true, // Si le bot doit ou non mettre à jour son statut
+    STATUS: "online", // Le statut du bot [en ligne, inactif, mdn, invisible]
+    TYPE: "WATCHING", // Type de statut pour le bot [JOUER | ÉCOUTE | REGARDER | EN CONCURRENCE]
+    MESSAGE: "{members} membres", // Votre message de statut de bot {members} membres. | .gg/redlitefa
   },
 
   STATS: {
     ENABLED: true,
-    XP_COOLDOWN: 5, // Cooldown in seconds between messages
+    XP_COOLDOWN: 5, // Temps de recharge en secondes entre les messages
     DEFAULT_LVL_UP_MSG: "{member}, Tu viens de monter **Level {level}**",
   },
 
   SUGGESTIONS: {
-    ENABLED: false, // Should the suggestion system be enabled
+    ENABLED: false, // Le système de suggestion doit-il être activé
     EMOJI: {
       UP_VOTE: "⬆️",
       DOWN_VOTE: "⬇️",

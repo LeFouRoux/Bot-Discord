@@ -1,4 +1,4 @@
-const { EMBED_COLORS, SUPPORT_SERVER, SITE, LOGO } = require("@root/config.js");
+const { EMBED_COLORS, SUPPORT_SERVER, SITE, LOGO, IPSERV } = require("@root/config.js");
 const { EmbedBuilder } = require("discord.js");
 
 /**
@@ -6,7 +6,7 @@ const { EmbedBuilder } = require("discord.js");
  */
 module.exports = {
     name: "ip",
-    description: "🔗 ❱ Vous donne l'ip du DarkRP.",
+    description: `🔗 ❱ Vous donne l'ip de ${SERVEURP}.`,
     category: "GMOD",
     botPermissions: ["EmbedLinks"],
     command: {
@@ -20,12 +20,12 @@ module.exports = {
 
     async interactionRun(interaction) {
         const embed = new EmbedBuilder()
-        .setTitle("IP de Azura [DarkRP] :")
+        .setTitle(`IP de ${SERVEURP} :`)
         .setColor(EMBED_COLORS.BOT_EMBED)
         .setThumbnail(LOGO)
         .setDescription(
-            `**Voici l'ip de \`Azura [DarkRP].\`**\n\n` +
-            '*Bientôt* \n\n' +
+            `**Voici l'ip de \`${SERVEURP}.\`**\n\n` +
+            `${IPSERV} \n\n` +
             `**Serveur de Support:** [Ici](${SUPPORT_SERVER}) \n` +
             `**Site:** [Ici](${SITE})`
         );
