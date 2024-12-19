@@ -116,7 +116,7 @@ module.exports = {
     ENABLED: true, // Si le bot doit ou non mettre à jour son statut
     STATUS: "online", // Le statut du bot [en ligne, inactif, mdn, invisible]
     TYPE: "WATCHING", // Type de statut pour le bot [JOUER | ÉCOUTE | REGARDER | EN CONCURRENCE]
-    MESSAGE: "{members} membres", // Votre message de statut de bot {members} membres. | .gg/redlitefa
+    MESSAGE: "{members} membres", // Votre message de statut de bot {members} membres. | .gg/qTeUUaBKWe
   },
 
   STATS: {
