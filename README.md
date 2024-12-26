@@ -1,5 +1,19 @@
 # Bot Discord personnalisable pour serveur Garry's Mods via 2 dossier (config.json/.env) !
 
+```
+$$\      $$\                                         
+$$$\    $$$ |                                        
+$$$$\  $$$$ | $$$$$$\  $$\   $$\  $$$$$$\  $$\   $$\ 
+$$\$$\$$ $$ | \____$$\ \$$\ $$  |$$  __$$\ $$ |  $$ |
+$$ \$$$  $$ | $$$$$$$ | \$$$$  / $$ /  $$ |$$ |  $$ |
+$$ |\$  /$$ |$$  __$$ | $$  $$<  $$ |  $$ |$$ |  $$ |
+$$ | \_/ $$ |\$$$$$$$ |$$  /\$$\ \$$$$$$  |\$$$$$$  |
+\__|     \__| \_______|\__/  \__| \______/  \______/  
+Si il y a des erreurs contacter maxoulfr_ sur discord.
+```
+
+![](https://img.shields.io/github/watchers/Maxoulfrdev/Bot-Discord-Gmod?style=social) ![](https://img.shields.io/github/stars/Maxoulfrdev/Bot-Discord-Gmod?style=social) ![](https://img.shields.io/github/forks/Maxoulfrdev/Bot-Discord-Gmod?style=social)
+
 > Faite "npm install" avant tout.
 > Vous avez juste a modifié le dossier "config.json" ainsi que ".env".
 
